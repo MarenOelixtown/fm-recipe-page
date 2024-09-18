@@ -8,15 +8,20 @@
 :root {
   --bg-primary: #ffffff;
   --bg-secondary: #fff5fa;
-  --bg-tertiary: hsl(29, 53%, 90%);
+  --bg-tertiary: #f3e6d8;
   --font-weight-400: 400;
   --font-weight-600: 600;
   --font-weight-700: 700;
+  --font-color-600: #5f574e;
+  --font-color-900: #302d2c;
+  --font-color-rose: #7b284f;
 }
 body {
   font-family: "Outfit", sans-serif;
   font-weight: var(--font-weight-400);
   background-color: var(--bg-tertiary);
+  color: var(--font-color-600);
+  line-height: 1.5;
 }
 main {
   display: flex;
@@ -26,6 +31,23 @@ main {
 h1,
 h3 {
   font-family: "Young Serif", serif;
+}
+h1 {
+  color: var(--font-color-900);
+  font-size: 2.5rem;
+  font-weight: var(--font-weight-400);
+}
+h2 {
+  font-size: 1.3rem;
+  color: var(--font-color-rose);
+  margin-bottom: 5px;
+}
+h3 {
+  font-size: 1.8rem;
+  font-weight: var(--font-weight-400);
+}
+p {
+  padding: 0.875rem 0 1.7rem 0;
 }
 article {
   width: max(375px, 100vw);
@@ -37,6 +59,9 @@ section,
 hr {
   margin: clamp(30px, 4vw, 40px);
 }
+header {
+  margin-top: 20px;
+}
 section:last-of-type {
   padding-bottom: clamp(30px, 4vw, 40px);
   margin-bottom: 0;
@@ -44,6 +69,19 @@ section:last-of-type {
 img {
   max-width: 100%;
   height: auto;
+}
+.preparation-list {
+  background-color: var(--bg-secondary);
+  border-radius: 10px;
+  padding: 25px;
+  list-style-position: inside;
+  font-weight: var(--font-weight-400);
+}
+.preparation-list li {
+  padding: 5px 0px;
+}
+.preparation-list li::marker {
+  color: var(--font-color-rose);
 }
 @media (min-width: 758px) {
   img {
