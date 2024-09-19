@@ -15,6 +15,7 @@
   --font-color-600: #5f574e;
   --font-color-900: #302d2c;
   --font-color-rose: #7b284f;
+  --font-color-brown: #854632;
 }
 body {
   font-family: "Outfit", sans-serif;
@@ -40,11 +41,12 @@ h1 {
 h2 {
   font-size: 1.3rem;
   color: var(--font-color-rose);
-  margin-bottom: 5px;
+  padding-bottom: 10px;
 }
 h3 {
   font-size: 1.8rem;
   font-weight: var(--font-weight-400);
+  color: var(--font-color-brown);
 }
 p {
   padding: 0.875rem 0 1.7rem 0;
@@ -61,6 +63,7 @@ hr {
 }
 header {
   margin-top: 20px;
+  margin-bottom: 0;
 }
 section:last-of-type {
   padding-bottom: clamp(30px, 4vw, 40px);
@@ -70,18 +73,30 @@ img {
   max-width: 100%;
   height: auto;
 }
+.list-styling {
+  padding: 10px 30px;
+  font-weight: var(--font-weight-400);
+}
+.list-styling li {
+  padding: 5px 5px 5px 20px;
+}
 .preparation-list {
   background-color: var(--bg-secondary);
   border-radius: 10px;
-  padding: 25px;
-  list-style-position: inside;
-  font-weight: var(--font-weight-400);
+  padding: 30px;
 }
 .preparation-list li {
-  padding: 5px 0px;
+  margin-left: 25px;
 }
 .preparation-list li::marker {
   color: var(--font-color-rose);
+}
+.igredients-list li::marker {
+  color: var(--font-color-brown);
+}
+.instructions-list li::marker {
+  color: var(--font-color-brown);
+  font-weight: var(--font-weight-700);
 }
 @media (min-width: 758px) {
   img {
