@@ -43,8 +43,11 @@ h1 {
 }
 h2 {
   font-size: 1.3rem;
+  background-color: var(--bg-secondary);
   color: var(--font-color-rose);
-  padding-bottom: 0.3125rem;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+  padding: 1.25rem 0 0 1.25rem;
 }
 h3 {
   font-size: 1.8rem;
@@ -93,8 +96,9 @@ img {
 }
 .preparation-list {
   background-color: var(--bg-secondary);
-  border-radius: 0.625rem;
-  padding: 1.25rem;
+  border-bottom-left-radius: 0.625rem;
+  border-bottom-right-radius: 0.625rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
 }
 .preparation-list li {
   margin-left: 1.5625rem;
